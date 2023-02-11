@@ -78,36 +78,21 @@ body{
 }
 
 @keyframes move-right{
-    0%{
-        opacity: 1;
-    }
-    50% {
-        transform: translateX(2000px);
-    }
-  80%{
-        transform: translateX(1550px);
 
+   from{
+        left: 0;
     }
-
-    100%{
-    transform: translatex(1610px);
+    to{
+    left: calc(100% - 90px);
     }
 }
-
-
 @keyframes move-left{
-    0%{
-        opacity: 1;
+   from{
+        right: 0;
     }
-    50% {
-        transform: translateX(-2000px);
-  }
-  80%{
-        transform: translateX(-1550px);
-
-    }
-
-    100%{
-    transform: translatex(-1610px);
+    to{
+    right: calc(100% - 90px);
     }
 }
+
+
