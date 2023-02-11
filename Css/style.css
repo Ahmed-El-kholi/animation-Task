@@ -116,7 +116,6 @@ body{
     90%{
          -webkit-transform: translateY(50px);;
         transform: translateY(50px);
-         left: calc(100% + 60px);
     }
 
     100%{
@@ -162,7 +161,6 @@ body{
     90%{
          -webkit-transform: translateY(50px);;
         transform: translateY(50px);
-        right: calc(100% + 60px);
     }
     100%{
     right: calc(100% - 60px);
