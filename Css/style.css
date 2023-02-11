@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222222;
+}
+.parent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.parent div{
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    border-radius: 50%;
+    position: absolute;
+}
+.chield-1,
+.chield-3,
+.chield-5{
+    -webkit-animation-name: move-right;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;    
+    animation-name: move-right;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+
+}
+.chield-2,
+.chield-4,
+.chield-6{
+    -webkit-animation-name: move-left;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;    
+    animation-name: move-left;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+
+
+
+}
+.parent .chield-1{
+    top: 0;
+    left: 0;  
+}
+.parent .chield-2{
+    top: 150px;
+    right: 0;
+    animation-delay: 3s;
+}
+.parent .chield-3{
+    top: 300px;
+    left: 0;
+    animation-delay: 6s;
+}
+
+.parent .chield-4{
+    top:450px;
+    right: 0;
+    animation-delay: 9s;
+}
+.parent .chield-5{
+    top: 600px;
+    left: 0;
+    animation-delay: 12s;
+}
+
+.parent .chield-6{
+    top: 750px;
+    right: 0;
+    animation-delay: 15s;
+}
+
+@keyframes move-right{
+    0%{
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(2000px);
+    }
+  80%{
+        transform: translateX(1550px);
+
+    }
+
+    100%{
+    transform: translatex(1610px);
+    }
+}
+
+
+@keyframes move-left{
+    0%{
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-2000px);
+  }
+  80%{
+        transform: translateX(-1550px);
+
+    }
+
+    100%{
+    transform: translatex(-1610px);
+    }
+}
